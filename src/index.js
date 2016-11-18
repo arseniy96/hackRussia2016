@@ -14,7 +14,14 @@ import Registration from './components/Registration/Registration';
 import mainReducer from './reducers/mainReducer';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-const store = createStore(mainReducer);
+
+let store;
+if (process.env.NODE_ENV) {
+  store = createStore(mainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+} else {
+  store = createStore(mainReducer);
+}
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
