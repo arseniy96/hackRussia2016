@@ -22,6 +22,7 @@ ReactDOM.render(
         <IndexRoute component={Index}/>
         <Route path="/app" component={App}>
           <IndexRoute component={store.getState().isLogin ? Products : Registration }/>
+          <Route path='registration' component={Registration}/>
         </Route>
       </Route>
     </Router>
