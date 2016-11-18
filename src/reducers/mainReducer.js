@@ -1,3 +1,3 @@
-export default (state) => {
+import { combineReducers } from 'redux';
 
-};
+export default (state = {}) => state;
