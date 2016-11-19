@@ -1,0 +1,22 @@
+.menu {
+  min-width: 100%;
+  background-color: #444444;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.link-menu {
+  padding: 15px;
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.link-menu:hover {
+  color: #28dc1b;
+  text-decoration: none;
+}
+
+

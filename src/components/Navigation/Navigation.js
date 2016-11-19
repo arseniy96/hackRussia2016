@@ -8,8 +8,12 @@ export default class Nav extends Component{
     return (
       <Grid>
         <Row>
-          <Link href='/'>Главная</Link>
-          <Link href='/app/registration'>Регистрация</Link>
+          <div className="menu-background">
+            <div className="menu">
+              <Link href='/' className="link-menu">Главная</Link>
+              <Link href='/app/registration' className="link-menu">Регистрация</Link>
+            </div>
+          </div>
         </Row>
         {this.props.children}
       </Grid>
